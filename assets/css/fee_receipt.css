@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+
+.dashboard-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+    background: #177a03;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+    align-items: flex-start;
+}
+
+.form-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+    padding: 20px;
+    flex: 0 0 320px;
+    min-width: 300px;
+    max-height: fit-content;
+    position: sticky;
+}
+
+.receipt-container {
+    flex: 1;
+    min-width: 450px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+}
+
+form label {
+    font-weight: 600;
+    display: block;
+    color: #333;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+form select, form input, form button {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: border 0.2s, box-shadow 0.2s;
+    margin-bottom: 10px;
+}
+
+form select:focus, form input:focus {
+    border-color: #177a03;
+    box-shadow: 0 0 0 2px rgba(23, 122, 3, 0.1);
+    outline: none;
+}
+
+.btn-primary {
+    background: #177a03;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: #145a02;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    transition: background 0.2s;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+.btn-success {
+    background: #28a745;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    transition: background 0.2s;
+}
+
+.btn-success:hover {
+    background: #218838;
+}
+
+.btn-info {
+    background: #17a2b8;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    transition: background 0.2s;
+}
+
+.btn-info:hover {
+    background: #138496;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    transition: background 0.2s;
+}
+
+.btn-danger:hover {
+    background: #c82333;
+}
+
+#feeReceipt {
+    padding: 20px 25px;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.card-border {
+    border-radius: 1px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.header img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.header-center {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+
+.header-center h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.row p {
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 13px;
+    position: relative;
+    z-index: 2;
+    background: white;
+}
+
+table th, table td {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background: #177a03;
+    color: white;
+    font-weight: 600;
+}
+
+table tfoot td {
+    background: #f8f9fa;
+    font-weight: 600;
+}
+
+.amount-cell {
+    color: #177a03;
+    font-weight: 700;
+}
+
+.success {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.notice {
+    background: #fff3cd;
+    color: #856404;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    color: rgba(100, 100, 100, 0.05);
+    transform: translate(-50%, -50%) rotate(-35deg);
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+    font-family: 'Arial', sans-serif;
+    user-select: none;
+    font-weight: bold;
+}
+
+.empty-receipt {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.empty-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.empty-receipt h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.empty-receipt p {
+    color: #666;
+    font-size: 14px;
+}
+
+@media print {
+    body {
+        background: white;
+    }
+    
+    .form-container,
+    .receipt-actions,
+    button {
+        display: none !important;
+    }
+    
+    .receipt-container {
+        width: 100%;
+        background: white;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #feeReceipt {
+        padding: 20px;
+        background: white;
+    }
+    
+    table {
+        page-break-inside: avoid;
+    }
+    
+    .header img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-flex {
+        flex-wrap: wrap;
+    }
+    
+    .form-container {
+        flex: 0 0 100%;
+        position: static;
+        max-height: auto;
+    }
+    
+    .receipt-container {
+        flex: 0 0 100%;
+        min-width: auto;
+    }
+}

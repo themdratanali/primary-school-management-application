@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /admin/login
+Disallow: /admin/dashboard
+Disallow: /student/
+Disallow: /student/login
+Disallow: /student/dashboard
+Disallow: /teacher/
+Disallow: /teacher/login
+Disallow: /teacher/dashboard
+Disallow: /download_file
+Disallow: /includes/
+Disallow: /config/
+
+# Sitemap
+Sitemap: https://apexmodelschool.edu.bd/sitemap.xml

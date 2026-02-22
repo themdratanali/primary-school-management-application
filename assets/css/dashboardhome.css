@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 15px;
+  background: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.card-box {
+  background: #177a03;
+  border-radius: 8px;
+  padding: 15px;
+  color: white;
+  transition: transform 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  min-height: 100px;
+}
+
+.card-box:hover {
+  transform: translateY(-3px);
+}
+
+.card-body h5 {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.95);
+  margin-bottom: 8px;
+}
+
+.card-body h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 5px;
+  color: white;
+}
+
+.icon-wrap {
+  font-size: 36px;
+  opacity: 0.2;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+.bg-green {
+  background: #177a03;
+}
+
+.bg-teal {
+  background: #1a9b06;
+}
+
+.bg-dark-green {
+  background: #145a02;
+}
+
+.bg-light-green {
+  background: #1ca304;
+}
+
+.dashboard-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.dashboard-row .card-box {
+  flex: 1 0 calc(25% - 12px);
+  min-width: 150px;
+  max-width: 200px;
+}
+
+.table-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+  color: #333;
+}
+
+.table-container h4 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+}
+
+table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: #177a03;
+  color: white;
+}
+
+.table tbody tr:hover {
+  background: #f8f9fa;
+  transition: background 0.2s ease;
+}
+
+@media (max-width: 992px) {
+  .dashboard-row .card-box {
+    flex: 1 0 calc(50% - 12px);
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-row .card-box {
+    flex: 1 0 100%;
+  }
+}

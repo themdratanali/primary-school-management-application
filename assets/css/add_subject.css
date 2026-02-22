@@ -1,0 +1,173 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #333;
+}
+
+.dashboard-title {
+    padding: 15px;
+    font-size: 18px;
+    background: #177a03;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    gap: 15px;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-bottom: 12px;
+    color: #444;
+    font-size: 16px;
+}
+
+.message {
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    background: #d4edda;
+    color: #155724;
+    font-size: 13px;
+}
+
+.classSelect, input[type="text"], input[type="number"], button {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+.classSelect:focus, input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #177a03;
+    box-shadow: 0 0 0 2px rgba(23, 122, 3, 0.1);
+    outline: none;
+}
+
+button {
+    background: #177a03;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #145a02;
+    transform: translateY(-1px);
+}
+
+.batch-count {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #444;
+    font-size: 14px;
+}
+
+.batch-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.batch-list li {
+    background: #f8f9fa;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: background 0.2s;
+}
+
+.batch-list li:hover {
+    background: #f0f0f0;
+}
+
+.edit-btn, .save-btn, .cancel-btn {
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    margin-left: 8px;
+    padding: 8px 14px;
+}
+
+.edit-btn {
+    background: #177a03;
+    color: white;
+}
+
+.edit-btn:hover {
+    background: #145a02;
+}
+
+.save-btn {
+    background: #177a03;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #145a02;
+}
+
+.cancel-btn {
+    background: #6c757d;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #5a6268;
+}
+
+input.inline-input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 13px;
+    width: 45%;
+    margin: 2px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+input.inline-input:focus {
+    border-color: #177a03;
+    box-shadow: 0 0 0 2px rgba(23, 122, 3, 0.1);
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .left, .right {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .dashboard-title {
+        font-size: 16px;
+    }
+    
+    input.inline-input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    padding: 20px;
+}
+
+.container {
+    max-width: 450px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+select, button {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button-group button {
+    flex: 1;
+}
+
+button {
+    background: #177a03;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.2s;
+    padding: 12px;
+}
+
+button:hover {
+    background: #145a02;
+}
+
+.copy-btn {
+    background: #0d6efd;
+}
+
+.copy-btn:hover {
+    background: #0b5ed7;
+}
+
+select:focus {
+    border-color: #177a03;
+    outline: none;
+}
+
+.message, .error {
+    padding: 10px 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.message {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.download-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.download-link a {
+    color: #177a03;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.download-link a:hover {
+    text-decoration: underline;
+}
