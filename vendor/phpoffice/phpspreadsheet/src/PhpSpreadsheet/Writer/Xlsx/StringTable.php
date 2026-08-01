@@ -342,3 +342,4 @@ class StringTable extends WriterPart
         return $returnValue;
     }
 }
+

@@ -133,3 +133,4 @@ class Rates
         return (($redemption / $investment) - 1) / ($daysBetweenSettlementAndMaturity);
     }
 }
+

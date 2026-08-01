@@ -43,3 +43,4 @@ interface StreamFactoryInterface
      */
     public function createStreamFromResource($resource): StreamInterface;
 }
+

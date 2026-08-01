@@ -109,3 +109,4 @@ class DefaultValueBinder implements IValueBinder
         return DataType::TYPE_STRING;
     }
 }
+

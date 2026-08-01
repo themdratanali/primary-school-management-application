@@ -137,3 +137,4 @@ class Subtotal
         return ExcelError::VALUE();
     }
 }
+

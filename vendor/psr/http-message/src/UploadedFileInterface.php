@@ -121,3 +121,4 @@ interface UploadedFileInterface
      */
     public function getClientMediaType(): ?string;
 }
+

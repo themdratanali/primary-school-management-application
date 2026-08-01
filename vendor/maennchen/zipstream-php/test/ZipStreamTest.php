@@ -1214,3 +1214,4 @@ class ZipStreamTest extends TestCase
         unlink($tmp);
     }
 }
+

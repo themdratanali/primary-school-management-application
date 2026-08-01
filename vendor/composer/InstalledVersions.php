@@ -376,3 +376,4 @@ class InstalledVersions
         return $installed;
     }
 }
+

@@ -113,3 +113,4 @@ class Sum
         return array_sum($wrkArray);
     }
 }
+

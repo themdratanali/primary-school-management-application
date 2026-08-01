@@ -19,3 +19,4 @@ class OverflowException extends Exception
         parent::__construct('File size exceeds limit of 32 bit integer. Please enable "zip64" option.');
     }
 }
+

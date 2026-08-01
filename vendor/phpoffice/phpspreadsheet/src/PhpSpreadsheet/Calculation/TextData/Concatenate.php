@@ -205,3 +205,4 @@ class Concatenate
         return $returnValue;
     }
 }
+

@@ -133,3 +133,4 @@ class TimeParts
         return (int) $timeValue->format('s');
     }
 }
+

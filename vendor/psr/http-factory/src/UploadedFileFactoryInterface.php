@@ -32,3 +32,4 @@ interface UploadedFileFactoryInterface
         ?string $clientMediaType = null
     ): UploadedFileInterface;
 }
+

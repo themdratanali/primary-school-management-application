@@ -127,3 +127,4 @@ class Metadata extends WriterPart
         return $objWriter->getData();
     }
 }
+

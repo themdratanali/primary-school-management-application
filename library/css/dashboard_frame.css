@@ -1,0 +1,109 @@
+/* Shared styling injected into dashboard iframe pages */
+:root {
+  --ams-bg: #f5f7fa;
+  --ams-card: #ffffff;
+  --ams-border: #e7ebf0;
+  --ams-text: #1f2937;
+  --ams-muted: #6b7280;
+  --ams-primary: #177a03;
+  --ams-primary-700: #145a02;
+  --ams-radius: 12px;
+  --ams-shadow: 0 1px 6px rgba(16, 24, 40, 0.06);
+}
+
+html, body {
+  background: var(--ams-bg) !important;
+  color: var(--ams-text);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Content wrapper for iframe pages */
+.content-wrapper {
+  padding: 15px;
+  min-height: 100vh;
+}
+
+/* Page header */
+.page-header {
+  background: linear-gradient(135deg, var(--ams-primary) 0%, var(--ams-primary-700) 100%);
+  color: white;
+  padding: 15px 20px;
+  border-radius: var(--ams-radius);
+  margin-bottom: 15px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: #000000;
+}
+
+/* Containers / boxes */
+.container,
+.container-fluid {
+  max-width: 95%;
+  margin-top: 5px;
+  margin: auto;
+}
+
+.card,
+.table-container,
+.manage-results-container,
+.marksheet-box,
+.form-container,
+.admit-container {
+  border-radius: var(--ams-radius) !important;
+  background: var(--ams-card);
+}
+
+/* Forms */
+input, textarea {
+  border-radius: 10px !important;
+}
+
+select {
+  border-radius: 10px !important;
+  width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none !important;
+  border-color: rgba(23, 122, 3, 0.55) !important;
+  box-shadow: 0 0 0 3px rgba(23, 122, 3, 0.12) !important;
+}
+
+.btn-primary,
+button[type="submit"],
+.submit-btn,
+.marksheet-btn,
+.generatebutton {
+  background: var(--ams-primary) !important;
+  border-color: var(--ams-primary) !important;
+  border-radius: 10px !important;
+}
+
+.btn-primary:hover,
+button[type="submit"]:hover,
+.submit-btn:hover,
+.marksheet-btn:hover,
+.generatebutton:hover {
+  background: var(--ams-primary-700) !important;
+  border-color: var(--ams-primary-700) !important;
+}
+
+/* Tables */
+table {
+  border-radius: var(--ams-radius) !important;
+  overflow: hidden;
+}
+
+thead, thead th {
+  background: var(--ams-primary) !important;
+  color: #fff !important;
+}
+
+tbody tr:hover {
+  background: rgba(17, 24, 39, 0.03) !important;
+}
+

@@ -150,3 +150,4 @@ class AccruedInterest
         return $parValue * $rate * $daysBetweenIssueAndSettlement;
     }
 }
+

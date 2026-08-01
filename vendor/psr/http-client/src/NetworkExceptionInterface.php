@@ -22,3 +22,4 @@ interface NetworkExceptionInterface extends ClientExceptionInterface
      */
     public function getRequest(): RequestInterface;
 }
+

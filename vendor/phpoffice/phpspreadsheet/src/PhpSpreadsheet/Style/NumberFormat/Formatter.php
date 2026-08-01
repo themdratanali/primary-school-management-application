@@ -222,3 +222,4 @@ class Formatter extends BaseFormatter
         return str_replace(chr(0x00), '.', $value);
     }
 }
+

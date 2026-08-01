@@ -88,3 +88,4 @@ class DataType
         return $value;
     }
 }
+

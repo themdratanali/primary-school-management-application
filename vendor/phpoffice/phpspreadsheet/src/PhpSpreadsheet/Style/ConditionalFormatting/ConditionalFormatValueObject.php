@@ -53,3 +53,4 @@ class ConditionalFormatValueObject
         return $this;
     }
 }
+

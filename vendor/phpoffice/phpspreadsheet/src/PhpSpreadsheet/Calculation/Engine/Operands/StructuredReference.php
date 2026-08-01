@@ -361,3 +361,4 @@ final class StructuredReference implements Operand, Stringable
         return $this->value;
     }
 }
+

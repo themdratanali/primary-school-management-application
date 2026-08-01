@@ -156,3 +156,4 @@ class StandardNormal
         return 1 - (is_numeric($temp) ? $temp : 0);
     }
 }
+

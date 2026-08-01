@@ -355,3 +355,4 @@ class Content extends WriterPart
         $objWriter->writeAttribute('table:number-rows-spanned', (string) $rowSpan);
     }
 }
+

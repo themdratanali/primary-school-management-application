@@ -104,3 +104,4 @@ enum CompressionMethod: int
     //  */
     // case AE_X_ENCRYPTION = 0x63;
 }
+

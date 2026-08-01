@@ -94,3 +94,4 @@ class XMLWriter extends \XMLWriter
         return $this->writeRaw(htmlspecialchars($rawTextData ?? ''));
     }
 }
+

@@ -1105,3 +1105,4 @@ class AutoFilter implements Stringable
         return (string) $this->range;
     }
 }
+

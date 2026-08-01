@@ -18,3 +18,4 @@ interface ClientInterface
      */
     public function sendRequest(RequestInterface $request): ResponseInterface;
 }
+

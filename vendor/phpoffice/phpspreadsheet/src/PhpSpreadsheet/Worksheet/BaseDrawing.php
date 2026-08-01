@@ -573,3 +573,4 @@ class BaseDrawing implements IComparable
         return $this->opacity;
     }
 }
+

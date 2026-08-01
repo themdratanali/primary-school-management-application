@@ -1281,3 +1281,4 @@ class ReferenceHelper
         throw new Exception('Cloning a Singleton is not allowed!');
     }
 }
+

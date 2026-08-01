@@ -524,3 +524,4 @@ class NumberFormat extends Supervisor
         self::$timeFormat = $timeFormat;
     }
 }
+

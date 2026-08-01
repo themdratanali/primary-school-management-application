@@ -56,3 +56,4 @@ class Dompdf extends Pdf
         parent::restoreStateAfterSave();
     }
 }
+

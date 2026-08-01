@@ -340,3 +340,4 @@ class Style
         $this->writer->endElement(); // Close style:style
     }
 }
+

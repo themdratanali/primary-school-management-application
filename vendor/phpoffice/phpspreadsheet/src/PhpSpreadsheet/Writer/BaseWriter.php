@@ -177,3 +177,4 @@ abstract class BaseWriter implements IWriter
         }
     }
 }
+

@@ -100,3 +100,4 @@ class Downloader
         header('Content-Length: ' . filesize($this->filepath));
     }
 }
+

@@ -479,3 +479,4 @@ class Cells
         return $cell;
     }
 }
+

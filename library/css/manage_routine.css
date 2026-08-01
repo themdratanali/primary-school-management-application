@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #333;
+}
+
+.dashboard-title {
+    padding: 15px;
+    font-size: 18px;
+    background: #177a03;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    gap: 15px;
+}
+
+.left {
+    width: 320px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-bottom: 12px;
+    color: #444;
+    font-size: 16px;
+}
+
+.message {
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    background: #d4edda;
+    color: #155724;
+    font-size: 13px;
+}
+
+input[type="text"],
+input[type="file"],
+button {
+    width: 100%;
+    padding: 12px 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+    border-color: #177a03;
+    box-shadow: 0 0 0 2px rgba(23, 122, 3, 0.1);
+    outline: none;
+}
+
+button {
+    background: #177a03;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #145a02;
+    transform: translateY(-1px);
+}
+
+button i {
+    margin-right: 8px;
+}
+
+.file-item {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    border: 1px solid #eee;
+}
+
+.file-item strong {
+    color: #333;
+    font-size: 14px;
+}
+
+.file-item small {
+    color: #666;
+    font-size: 12px;
+}
+
+.download-btn,
+.delete-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.download-btn {
+    background: #177a03;
+    color: white;
+}
+
+.download-btn:hover {
+    background: #145a02;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+@media (max-width: 768px) {
+    .left, .right {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .dashboard-title {
+        font-size: 16px;
+    }
+}

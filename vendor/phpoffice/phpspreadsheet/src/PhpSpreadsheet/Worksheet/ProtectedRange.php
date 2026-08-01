@@ -43,3 +43,4 @@ class ProtectedRange
         return $this->securityDescriptor;
     }
 }
+

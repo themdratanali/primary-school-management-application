@@ -48,3 +48,4 @@ class Accounting extends CurrencyBase
         return "[\${$this->currencyCode}-{$this->locale}]";
     }
 }
+

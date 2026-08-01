@@ -593,3 +593,4 @@ class Drawing extends WriterPart
         }
     }
 }
+

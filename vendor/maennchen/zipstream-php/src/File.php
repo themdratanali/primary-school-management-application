@@ -428,3 +428,4 @@ class File
         return $this->operationMode === OperationMode::SIMULATE_LAX || $this->operationMode === OperationMode::SIMULATE_STRICT;
     }
 }
+

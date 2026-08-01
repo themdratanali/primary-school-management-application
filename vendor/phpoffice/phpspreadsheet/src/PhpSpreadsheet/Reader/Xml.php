@@ -727,3 +727,4 @@ class Xml extends BaseReader
             : ($simple->attributes($node) ?? new SimpleXMLElement('<xml></xml>'));
     }
 }
+

@@ -20,3 +20,4 @@ class FileNotReadableException extends Exception
         parent::__construct("The file with the path $path isn't readable.");
     }
 }
+

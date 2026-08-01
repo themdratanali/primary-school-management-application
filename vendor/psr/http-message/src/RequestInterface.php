@@ -128,3 +128,4 @@ interface RequestInterface extends MessageInterface
      */
     public function withUri(UriInterface $uri, bool $preserveHost = false): RequestInterface;
 }
+

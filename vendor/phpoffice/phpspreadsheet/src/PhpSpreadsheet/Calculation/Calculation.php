@@ -2846,3 +2846,4 @@ class Calculation extends CalculationLocale
         return $this->spreadsheet;
     }
 }
+

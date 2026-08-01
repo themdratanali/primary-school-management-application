@@ -91,3 +91,4 @@ class CharacterConvert
         return $retVal;
     }
 }
+

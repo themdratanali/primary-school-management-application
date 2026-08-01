@@ -353,3 +353,4 @@ class Conditional
         return $database;
     }
 }
+

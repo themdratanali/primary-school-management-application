@@ -267,3 +267,4 @@ abstract class BaseReader implements IReader
         return new Spreadsheet();
     }
 }
+

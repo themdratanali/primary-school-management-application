@@ -931,3 +931,4 @@ abstract class Properties
         $this->shadowColor = clone $this->shadowColor;
     }
 }
+

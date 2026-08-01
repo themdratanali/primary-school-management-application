@@ -700,3 +700,4 @@ class Style extends WriterPart
         return $aNumFmts;
     }
 }
+

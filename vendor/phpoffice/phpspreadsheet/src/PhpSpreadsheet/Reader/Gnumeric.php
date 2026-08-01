@@ -618,3 +618,4 @@ class Gnumeric extends BaseReader
         return $arrayFormulaRange;
     }
 }
+

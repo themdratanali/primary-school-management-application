@@ -26,3 +26,4 @@ class ErrorCode
         return 0;
     }
 }
+

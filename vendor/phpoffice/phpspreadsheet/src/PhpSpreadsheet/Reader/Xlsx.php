@@ -2560,3 +2560,4 @@ class Xlsx extends BaseReader
         return true;
     }
 }
+

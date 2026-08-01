@@ -350,3 +350,4 @@ class Sort extends LookupRefValidations
 //        return $lookupArray;
     }
 }
+

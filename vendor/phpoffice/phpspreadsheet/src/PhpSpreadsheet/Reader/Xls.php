@@ -4883,3 +4883,4 @@ class Xls extends XlsBase
         return $this->version;
     }
 }
+

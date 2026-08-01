@@ -1286,3 +1286,4 @@ class Html extends BaseReader
         return $info;
     }
 }
+

@@ -998,3 +998,4 @@ class Cell implements Stringable
         return $hidden !== Protection::PROTECTION_UNPROTECTED;
     }
 }
+

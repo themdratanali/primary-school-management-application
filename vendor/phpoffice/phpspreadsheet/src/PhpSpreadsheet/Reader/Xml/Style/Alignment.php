@@ -61,3 +61,4 @@ class Alignment extends StyleBase
         return $style;
     }
 }
+

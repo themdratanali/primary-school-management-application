@@ -322,3 +322,4 @@ interface UriInterface
      */
     public function __toString(): string;
 }
+

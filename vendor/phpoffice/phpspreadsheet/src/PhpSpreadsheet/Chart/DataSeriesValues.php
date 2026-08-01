@@ -583,3 +583,4 @@ class DataSeriesValues extends Properties
         }
     }
 }
+

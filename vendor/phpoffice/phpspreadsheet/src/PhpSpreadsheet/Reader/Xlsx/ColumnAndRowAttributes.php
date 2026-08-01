@@ -227,3 +227,4 @@ class ColumnAndRowAttributes extends BaseParserClass
         return $rowAttributes;
     }
 }
+

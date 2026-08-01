@@ -403,3 +403,4 @@ class XlsBase extends BaseReader
         return ord($data[$pos]) | (ord($data[$pos + 1]) << 8) | (ord($data[$pos + 2]) << 16) | $_ord_24;
     }
 }
+

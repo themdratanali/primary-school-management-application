@@ -137,3 +137,4 @@ class FormattedNumber
         return '~^(?:(?: *(?<PrefixedSign>[-+])? *(?<PrefixedCurrency>[' . $currencyCodes . ']) *(?<PrefixedSign2>[-+])? *(?<PrefixedValue>[0-9]+[' . $decimalSeparator . ']?[0-9*]*(?:E[-+]?[0-9]*)?) *)|(?: *(?<PostfixedSign>[-+])? *(?<PostfixedValue>[0-9]+' . $decimalSeparator . '?[0-9]*(?:E[-+]?[0-9]*)?) *(?<PostfixedCurrency>[' . $currencyCodes . ']) *))$~ui';
     }
 }
+

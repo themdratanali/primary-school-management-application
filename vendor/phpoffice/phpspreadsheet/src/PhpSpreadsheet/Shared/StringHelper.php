@@ -702,3 +702,4 @@ class StringHelper
         return $default;
     }
 }
+

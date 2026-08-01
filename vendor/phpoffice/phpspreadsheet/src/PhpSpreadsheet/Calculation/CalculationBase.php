@@ -53,3 +53,4 @@ class CalculationBase
         return false;
     }
 }
+

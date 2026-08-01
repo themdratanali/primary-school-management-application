@@ -158,3 +158,4 @@ class Tangent
         return atan2($yCoordinate, $xCoordinate);
     }
 }
+

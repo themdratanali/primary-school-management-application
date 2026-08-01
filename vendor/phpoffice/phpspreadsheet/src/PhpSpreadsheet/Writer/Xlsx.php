@@ -808,3 +808,4 @@ class Xlsx extends BaseWriter
         return $this;
     }
 }
+

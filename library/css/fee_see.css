@@ -1,0 +1,721 @@
+/* fee_see.css - Refined Professional Design (aligned with the rest of the app) */
+:root {
+  --ams-primary: #177a03;
+  --ams-primary-700: #145a02;
+  --ams-primary-50: #eaf6e4;
+  --ams-success: #28a745;
+  --ams-danger: #dc3545;
+  --ams-bg: #f4f6f9;
+  --ams-surface: #ffffff;
+  --ams-border: #e7ebf0;
+  --ams-text: #1f2937;
+  --ams-text-secondary: #6b7280;
+  --ams-radius: 16px;
+  --ams-shadow: 0 4px 18px rgba(16, 24, 40, 0.06);
+  --ams-shadow-hover: 0 12px 28px rgba(16, 24, 40, 0.12);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--ams-bg);
+  color: var(--ams-text);
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Page Header (matches overview_fee) */
+.page-header {
+  background: linear-gradient(135deg, var(--ams-primary) 0%, var(--ams-primary-700) 100%);
+  color: #fff;
+  padding: 22px 28px;
+  border-radius: var(--ams-radius);
+  margin-bottom: 22px;
+  box-shadow: 0 10px 26px rgba(23, 122, 3, 0.22);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-header h4 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-header .btn-light {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--ams-primary-700);
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 9px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.page-header .btn-light:hover {
+  background: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  color: var(--ams-primary-700);
+}
+
+/* Search Form */
+.fee-search-form {
+  background: var(--ams-surface);
+  border-radius: var(--ams-radius);
+  padding: 22px 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--ams-shadow);
+  border: 1px solid var(--ams-border);
+}
+
+.fee-search-form .search-form-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: flex-end;
+}
+
+.fee-search-form .form-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.fee-search-form .form-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--ams-text-secondary);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.fee-search-form .form-label i {
+  color: var(--ams-primary);
+  font-size: 13px;
+  width: 16px;
+  text-align: center;
+}
+
+.fee-search-form .form-select {
+  width: 100%;
+  padding: 11px 38px 11px 14px;
+  border: 1px solid var(--ams-border);
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: var(--ams-bg);
+  color: var(--ams-text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%236b7280'%3E%3Cpath d='M7 10l5-5-5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 14px;
+}
+
+.fee-search-form .form-select:focus {
+  border-color: var(--ams-primary);
+  box-shadow: 0 0 0 3px rgba(23, 122, 3, 0.15);
+  outline: none;
+  background-color: #fff;
+}
+
+.fee-search-form .btn-primary {
+  height: 46px;
+  padding: 0 24px;
+  background: linear-gradient(135deg, var(--ams-primary), var(--ams-primary-700));
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(23, 122, 3, 0.22);
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  margin: 10px;
+}
+
+.fee-search-form .btn-primary:hover {
+  background: linear-gradient(135deg, var(--ams-primary-700), #0f4a02);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(23, 122, 3, 0.28);
+}
+
+/* Select2 integration */
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+  border: 1px solid var(--ams-border);
+  border-radius: 12px;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  background: var(--ams-bg);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  padding-left: 14px;
+  line-height: 44px;
+  color: var(--ams-text);
+  font-size: 14px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 44px;
+  right: 12px;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single,
+.select2-container--default.select2-container--focus .select2-selection--single,
+.select2-container--default .select2-selection--multiple:focus {
+  border-color: var(--ams-primary);
+  box-shadow: 0 0 0 3px rgba(23, 122, 3, 0.15);
+}
+
+.select2-dropdown {
+  border-radius: 12px;
+  border-color: var(--ams-border);
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .fee-search-form .search-form-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .fee-search-form .form-group {
+    min-width: auto;
+  }
+
+  .fee-search-form .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Student Profile Card */
+.student-profile-card {
+  background: var(--ams-surface);
+  border-radius: var(--ams-radius);
+  overflow: hidden;
+  margin-bottom: 22px;
+  box-shadow: var(--ams-shadow);
+  border: 1px solid var(--ams-border);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 28px 26px;
+  background: linear-gradient(135deg, var(--ams-primary) 0%, var(--ams-primary-700) 100%);
+  color: #fff;
+  position: relative;
+}
+
+.profile-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.10) 1px, transparent 1px);
+  background-size: 18px 18px;
+  opacity: .5;
+  pointer-events: none;
+}
+
+.profile-photo-section {
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 20px rgba(16, 24, 40, 0.22);
+  background: #eef2f7;
+}
+
+.profile-photo-placeholder {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid rgba(255, 255, 255, 0.6);
+}
+
+.profile-photo-placeholder i {
+  font-size: 40px;
+  color: #fff;
+}
+
+.profile-info {
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+
+.profile-info h3 {
+  margin: 0 0 12px 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.info-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge-item {
+  background: rgba(255, 255, 255, 0.16);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge-item i {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+}
+
+.profile-summary {
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.summary-card.total {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+
+.summary-icon {
+  font-size: 28px;
+  opacity: 0.95;
+}
+
+.summary-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-value {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.summary-label {
+  font-size: 12px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Fee Summary Section */
+.fee-summary-section {
+  background: var(--ams-surface);
+  border-radius: var(--ams-radius);
+  padding: 22px 24px;
+  margin-bottom: 22px;
+  box-shadow: var(--ams-shadow);
+  border: 1px solid var(--ams-border);
+}
+
+.fee-summary-section h4 {
+  margin: 0 0 18px 0;
+  color: var(--ams-text);
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fee-summary-section h4 i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--ams-primary-50);
+  color: var(--ams-primary);
+  font-size: 15px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.summary-card {
+  background: var(--ams-surface);
+  border: 1px solid var(--ams-border);
+  border-radius: 14px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-left: 4px solid var(--card-color, var(--ams-primary));
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--ams-shadow-hover);
+}
+
+.summary-card .card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #fff;
+  background: var(--card-color, var(--ams-primary));
+  flex-shrink: 0;
+}
+
+.summary-card .card-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.summary-card .card-value {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--ams-text);
+}
+
+.summary-card .card-label {
+  font-size: 13px;
+  color: var(--ams-text-secondary);
+  font-weight: 600;
+}
+
+.summary-card .card-count {
+  font-size: 12px;
+  color: var(--ams-text-secondary);
+}
+
+/* Fee Table Section */
+.fee-table-section {
+  background: var(--ams-surface);
+  border-radius: var(--ams-radius);
+  padding: 22px 24px;
+  box-shadow: var(--ams-shadow);
+  border: 1px solid var(--ams-border);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 12px;
+}
+
+.table-header h4 {
+  margin: 0;
+  color: var(--ams-text);
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.table-header h4 i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--ams-primary-50);
+  color: var(--ams-primary);
+  font-size: 15px;
+}
+
+.table-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.table-actions .btn {
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.table-actions .btn-outline-primary {
+  border: 1px solid var(--ams-primary);
+  color: var(--ams-primary);
+  background: var(--ams-surface);
+}
+
+.table-actions .btn-outline-primary:hover {
+  background: var(--ams-primary);
+  border-color: var(--ams-primary);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.table-actions .btn-outline-secondary {
+  border: 1px solid var(--ams-border);
+  color: var(--ams-text-secondary);
+  background: var(--ams-surface);
+}
+
+.table-actions .btn-outline-secondary:hover {
+  background: #eef1f4;
+  color: var(--ams-text);
+  transform: translateY(-1px);
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.fee-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+}
+
+.fee-table thead th {
+  background: linear-gradient(135deg, var(--ams-primary) 0%, var(--ams-primary-700) 100%);
+  color: #fff;
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.fee-table thead th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.fee-table thead th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.fee-table thead th i {
+  margin-right: 6px;
+  opacity: 0.85;
+}
+
+.fee-table tbody td {
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--ams-border);
+  vertical-align: middle;
+}
+
+.fee-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.fee-table tbody tr:hover {
+  background: var(--ams-primary-50);
+}
+
+.fee-table tfoot td {
+  padding: 14px 16px;
+  background: #fafbfc;
+  font-weight: 700;
+  color: var(--ams-text);
+  border-top: 2px solid var(--ams-border);
+}
+
+.fee-table tfoot td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.fee-table tfoot td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(16, 24, 40, 0.12);
+  letter-spacing: 0.02em;
+}
+
+.amount-cell {
+  font-weight: 700;
+  color: var(--ams-primary);
+}
+
+.fee-table .btn-outline-info {
+  border: 1px solid var(--ams-primary);
+  color: var(--ams-primary);
+  background: var(--ams-surface);
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.fee-table .btn-outline-info:hover {
+  background: var(--ams-primary);
+  border-color: var(--ams-primary);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* Empty / Welcome State */
+.empty-state,
+.welcome-state {
+  text-align: center;
+  padding: 56px 24px;
+  background: var(--ams-surface);
+  border-radius: var(--ams-radius);
+  box-shadow: var(--ams-shadow);
+  border: 1px solid var(--ams-border);
+}
+
+.empty-icon,
+.welcome-icon {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+  color: var(--ams-primary);
+  background: var(--ams-primary-50);
+}
+
+.empty-state h3,
+.welcome-state h3 {
+  color: var(--ams-text);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.empty-state p,
+.welcome-state p {
+  color: var(--ams-text-secondary);
+  font-size: 14px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: #fff;
+    padding: 0;
+  }
+
+  .fee-search-form,
+  .table-actions,
+  .btn {
+    display: none !important;
+  }
+
+  .fee-table-section,
+  .student-profile-card,
+  .fee-summary-section {
+    box-shadow: none;
+    border: 1px solid var(--ams-border);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-summary {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .summary-card.total {
+    justify-content: center;
+  }
+
+  .info-badges {
+    justify-content: center;
+  }
+
+  .table-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}

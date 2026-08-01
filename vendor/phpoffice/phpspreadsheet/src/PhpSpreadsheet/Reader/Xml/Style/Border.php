@@ -112,3 +112,4 @@ class Border extends StyleBase
         return [$borderPosition ?? null, $diagonalDirection];
     }
 }
+

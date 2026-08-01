@@ -156,3 +156,4 @@ interface StreamInterface
      */
     public function getMetadata(?string $key = null);
 }
+

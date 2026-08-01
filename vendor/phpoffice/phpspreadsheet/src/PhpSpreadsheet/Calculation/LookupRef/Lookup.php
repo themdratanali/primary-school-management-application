@@ -120,3 +120,4 @@ class Lookup
         return count($dataArray[$row]);
     }
 }
+

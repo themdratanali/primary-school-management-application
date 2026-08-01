@@ -234,3 +234,4 @@ class CurrencyBase extends Number
         return $format;
     }
 }
+

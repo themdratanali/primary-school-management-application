@@ -19,3 +19,4 @@ class StreamNotReadableException extends Exception
         parent::__construct('The stream could not be read.');
     }
 }
+

@@ -122,3 +122,4 @@ class Namespaces
 
     const DYNAMIC_ARRAY_RICHDATA = 'http://schemas.microsoft.com/office/spreadsheetml/2017/richdata';
 }
+

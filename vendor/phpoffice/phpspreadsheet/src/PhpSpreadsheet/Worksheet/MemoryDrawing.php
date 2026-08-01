@@ -336,3 +336,4 @@ class MemoryDrawing extends BaseDrawing
         );
     }
 }
+

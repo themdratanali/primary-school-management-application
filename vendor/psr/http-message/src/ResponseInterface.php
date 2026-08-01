@@ -66,3 +66,4 @@ interface ResponseInterface extends MessageInterface
      */
     public function getReasonPhrase(): string;
 }
+

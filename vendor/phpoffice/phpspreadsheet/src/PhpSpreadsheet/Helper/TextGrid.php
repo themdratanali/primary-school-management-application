@@ -176,3 +176,4 @@ class TextGrid
         return mb_strlen($value);
     }
 }
+
