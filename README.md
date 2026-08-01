@@ -436,76 +436,6 @@ The application uses **MySQL** to securely store academic and administrative inf
 
 ---
 
-# Screenshots
-
-Create an **assets/screenshots** folder.
-
-```
-assets/
-
-└── screenshots/
-    ├── dashboard.png
-    ├── login.png
-    ├── students.png
-    ├── teachers.png
-    ├── attendance.png
-    ├── examination.png
-    ├── results.png
-    └── fees.png
-```
-
-Example
-
-```md
-## Dashboard
-
-<p align="center">
-<img src="assets/screenshots/dashboard.png" width="90%">
-</p>
-
-## Student Management
-
-<p align="center">
-<img src="assets/screenshots/students.png" width="90%">
-</p>
-
-## Attendance
-
-<p align="center">
-<img src="assets/screenshots/attendance.png" width="90%">
-</p>
-```
-
----
-
-# Documents
-
-All project-related documents are available from the Google Drive folder below.
-
-<div align="center">
-
-## 📂 Project Documents
-
-### 🔗 Google Drive
-
-**👉 [Download All Documents](https://drive.google.com/drive/folders/YOUR_FOLDER_ID?usp=sharing)**
-
-</div>
-
-### Included Documents
-
-| Document | Description |
-|:---------|:------------|
-| 📘 Project Report | Complete project documentation |
-| 📑 SRS Document | Software Requirement Specification |
-| 📊 Presentation | PowerPoint presentation |
-| 🖼️ UML Diagrams | Use Case, ERD, DFD, Class Diagram |
-| 🗄️ Database Schema | SQL database |
-| 📸 Screenshots | Application screenshots |
-| 💻 Source Code | Complete project source |
-
----
-
 # Future Enhancements
 
 The project can be further enhanced with additional features such as:
@@ -557,35 +487,43 @@ git push origin feature-name
 
 ---
 
+---
+
 # License
 
-This project is released for **educational and learning purposes**.
+© 2026 **Md. Ratan Ali**. All Rights Reserved.
 
-You are free to study, modify, and use it with proper attribution.
+This project is a real-world software application developed for production use.
 
----
+No part of this project, including its source code, design, documentation, or other assets, may be copied, modified, distributed, reproduced, or used without prior written permission from the author.
 
-# Acknowledgements
-
-Special thanks to all teachers, mentors, and contributors who provided guidance and support during the development of this project.
-
-We also express our sincere gratitude to everyone who contributed directly or indirectly to making this application successful.
+For licensing, commercial inquiries, collaboration opportunities, or authorized access, please contact the author directly.
 
 ---
 
-# Author
+# Contact
 
-| Name | Role | Profile |
-|:-----|:-----|:--------|
-| **Md. Ratan Ali** | Full Stack Web Developer | 🌐 [GitHub](https://github.com/yourusername) • [LinkedIn](https://linkedin.com/in/yourusername) |
+For business inquiries, licensing, project collaboration, or technical discussions, feel free to connect with me.
+
+<div align="center">
+
+### 👨‍💻 Md. Ratan Ali
+
+**Full Stack Web Developer • Graphic Designer • Entrepreneur**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mdratanali)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/themdratanali)
+
+</div>
 
 ---
 
-# Support
+# Copyright
 
-If you find this project useful, please consider giving it a **⭐ Star** on GitHub.
+**© 2026 Md. Ratan Ali. All Rights Reserved.**
 
-It helps support future development and encourages more open-source contributions.
+Unauthorized copying, distribution, modification, reverse engineering, or commercial use of this software without written permission is strictly prohibited.
 
 ---
 
@@ -595,12 +533,10 @@ It helps support future development and encourages more open-source contribution
 
 **Primary School Management Application**
 
-*A Complete School Management Solution Built with PHP & MySQL*
+*A Professional School Management Solution Built with PHP & MySQL*
 
-**Developed by Md. Ratan Ali**
+Developed and Maintained by **Md. Ratan Ali**
 
-Made with ❤️ using **PHP**, **MySQL**, **HTML**, **CSS**, **JavaScript**, and **Bootstrap**
-
-© 2026 All Rights Reserved.
+For business inquiries or collaboration, please connect via **LinkedIn**.
 
 </div>
