@@ -235,31 +235,45 @@ Authentication  School Modules  Reports
 
 ---
 
-# Project Structure
+# Screenshots
 
-```text
-Primary-School-Management/
-│
-├── index.php
-├── login.php
-├── dashboard.php
-├── config/
-├── database/
-├── admin/
-├── teacher/
-├── student/
-├── parent/
-├── assets/
-│   ├── css/
-│   ├── js/
-│   ├── images/
-│
-├── uploads/
-├── includes/
-├── reports/
-└── README.md
+Create an **assets/screenshots** folder.
+
+```
+assets/
+
+└── screenshots/
+    ├── dashboard.png
+    ├── login.png
+    ├── students.png
+    ├── teachers.png
+    ├── attendance.png
+    ├── examination.png
+    ├── results.png
+    └── fees.png
 ```
 
+Example
+
+```md
+## Dashboard
+
+<p align="center">
+<img src="assets/screenshots/dashboard.png" width="90%">
+</p>
+
+## Student Management
+
+<p align="center">
+<img src="assets/screenshots/students.png" width="90%">
+</p>
+
+## Attendance
+
+<p align="center">
+<img src="assets/screenshots/attendance.png" width="90%">
+</p>
+```
 ---
 
 # Project Highlights
@@ -484,8 +498,6 @@ git push origin feature-name
 ```
 
 5. Create a Pull Request
-
----
 
 ---
 
